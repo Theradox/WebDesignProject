@@ -1,0 +1,356 @@
+*{
+  margin:0;
+  padding: 0;
+  font-family: 'Exo 2';
+}
+body{
+  background-color: #e2e2e4;
+  height: 3000px;
+}
+.text a{
+	text-decoration: none;
+	color: rgb(26,54,104);
+	font-size: 15px;
+	transition: all 100ms ease-in-out;
+	font-family: 'Ubuntu', sans-serif;;
+}
+
+.text a:hover{
+	color: orange;
+}
+.text{
+	display: grid;
+	grid-template-columns: repeat(12,1fr);
+	grid-template-rows: 40px 40px 40px 40px 40px;
+}
+.logo{
+	margin-top: 20px;
+	margin-left: 15px;
+	grid-column:1/3;
+	grid-row:1/3;
+
+}
+.whoweare{
+		grid-column:9;
+		grid-row:2;
+}
+.whatwedo{
+		grid-column:10;
+		grid-row:2;
+}
+.news{
+		grid-column:11;
+		grid-row:2;
+}
+.investors{
+		grid-column:12;
+		grid-row:2;
+		padding-left:15px;
+}
+
+.text{
+  height: 800px;
+  width: 100%;
+  background-image: url("img/watwe.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+hr.fancy-line {
+    border: 0;
+    height: 1px;
+    background: rgb(57,57,231);
+    background: radial-gradient(circle, rgba(57,57,231,0.7259278711484594) 19%, rgba(226,226,228,1) 72%);
+
+}
+
+.gridone{
+  display: grid;
+  grid-template-areas:
+  "Aeronaut AeroText"
+  "Space SpaceText"
+  "RMS RMStext"
+  "MFC MFCtext";
+}
+
+
+#Aeronaut{grid-area: Aeronaut;}
+#AeroText{grid-area: AeroText;}
+#Space{grid-area: Space;}
+#SpaceText{grid-area: SpaceText;}
+#RMS{grid-area: RMS;}
+#RMStext{grid-area:RMStext;}
+#MFC{grid-area: MFC;}
+#MFCtext{grid-area:MFCtext;}
+/*OVA E ZA PRVATA KATEGORIJA - AERO*/
+.slika1{
+  height: 300px;
+  width: 400px;
+  background-image: url("img/aero.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.hero-body h1,h3{
+  color:#369EFF;
+}
+.Aeronaut, .Space, .RMS, .MFC{
+  margin-left: 50px;
+
+}
+h3{
+  color: #369EFF;
+}
+.AeroText{
+padding-top: 70px;
+margin-right: 35px;
+margin-left: 35px;
+}
+/*.aero {
+  margin-left: 370px;
+  margin-top: 25px;
+}
+.button{
+  background-color: #FF6E0D;
+  border-color: #1C1F94;
+}
+.button p{
+  color:#1C1F94;
+
+
+/*OVA E ZA BUTTONS */
+
+.aero{
+left: 365px;
+top:20px;
+margin-bottom: 15px;
+}
+
+.spacce{
+  width: 130px;
+  left: 365px;
+  top:20px;
+  margin-bottom: 15px;
+}
+.rmms{
+  width: 130px;
+  left: 365px;
+  top:20px;
+  margin-bottom: 15px;
+}
+
+.mffc{
+  width: 130px;
+  left: 365px;
+  top:20px;
+  margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* OVA E ZA VTORATA KATEGORIJA - SPACE*/
+.slika2{
+  height: 300px;
+  width: 400px;
+  background-image: url("img/space.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.Space, .RMS, .MFC{
+  margin-top:90px;
+}
+.SpaceText, .RMStext, .MFCtext{
+  margin-top: 6rem;
+  padding-top: 70px;
+  margin-right: 35px;
+  margin-left: 35px;
+}
+
+/* OVA E ZA TRETATA KATEGORIJA- RMS */
+.slika3{
+  height: 300px;
+  width: 400px;
+  background-image: url("img/rms.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*OVA E ZA CETVRTATA KATEGORIJA - MFC*/
+.slika4{
+  height: 300px;
+  width: 400px;
+  background-image: url("img/mfc.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+.button a{
+  text-decoration: none;
+  color:white;
+}
+.blogPost{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  grid-auto-rows: repeat(3,1fr);
+  margin-top: 100px;
+  height: 130px;
+  background-color: lightblue;
+}
+.blogPost h1{
+  color:white;
+  font-size: 28px;
+  grid-row:1;
+  grid-column:1 / -1;
+}
+
+.blogPost h2{
+  grid-row:2;
+  grid-column: 1/ -1;
+}
+.blogPost .button{
+  background-color: orange;
+  color:white;
+  grid-row:3;
+  grid-column: 5/9;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer-grid{
+  margin-top:50px;
+  display: grid;
+  width: 100vw;
+  height: 400px;
+  background-color: #369EFF;
+  grid-template-columns: repeat(12,1fr);
+  grid-template-rows: repeat(12,40px);
+}
+
+.footer-grid a{
+  text-decoration: none;
+	color: white;
+	font-size: 12px;
+	transition: all 100ms ease-in-out;
+	font-family: 'Ubuntu', sans-serif;
+}
+.footer-grid a:hover{
+	color: orange;
+}
+
+.footer-grid :nth-child(1){
+  grid-row:3;
+  grid-column: 2/3;
+}
+.footer-grid :nth-child(2){
+  grid-row:4;
+  grid-column: 2/3;
+}
+.footer-grid :nth-child(3){
+  grid-row:5;
+  grid-column: 2/3;
+}
+.footer-grid :nth-child(4){
+  grid-row:6;
+  grid-column: 2/5;
+
+}
+.footer-grid :nth-child(5){
+  grid-row:7;
+  grid-column: 2/3;
+}
+.footer-grid :nth-child(6){
+  grid-row:8;
+  grid-column: 2/3;
+}
+
+.footer-grid :nth-child(7){
+  grid-row:3;
+  grid-column: 11/12;
+}
+.footer-grid :nth-child(8){
+  grid-row:4;
+  grid-column: 11/12;;
+}
+.footer-grid :nth-child(9){
+  grid-row:5;
+  grid-column: 11/12;;
+}
+.footer-grid :nth-child(10){
+  grid-row:6;
+  grid-column: 11/12;
+
+}
+.footer-grid :nth-child(11){
+  grid-row:7;
+  grid-column: 11/12;
+}
+.footer-image{
+  grid-row: 7;
+  grid-column:6/9;
+}
+h5{
+  color:white;
+  font-size:10px;
+  word-spacing: 5px;
+  grid-row: 9;
+  grid-column:6/9;
+}
